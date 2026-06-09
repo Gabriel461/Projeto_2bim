@@ -6,9 +6,6 @@
     <title>Página de Cadastro</title>
     <style>
        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
        } 
@@ -17,19 +14,51 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: url();
+        background: url(https://images5.alphacoders.com/798/thumb-1920-798722.png);
     }
 
     .container {
         width: 420px;
         background-color: transparent;
-        border: 2px solid gray;
+        border: 3px solid gray;
         border-radius: 30px;
-        padding: 30px 40px;
+        padding: 30px;
+        backdrop-filter: blur(5px);
+        
     }
 
     .container h1 {
         font-size: 40px;
+        text-align: center;
+        color: white;
+        
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px;
+    }
+
+    .box input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        border-radius: 20px ;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: white;
+        cursor: pointer;
     }
 
     </style>
