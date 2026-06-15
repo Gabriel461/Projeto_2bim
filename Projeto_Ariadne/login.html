@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Login</title>
+    <style>
+       * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+       } 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url(https://images5.alphacoders.com/798/thumb-1920-798722.png);
+    }
+
+    .container {
+        width: 420px;
+        background-color: transparent;
+        border: 3px solid gray;
+        border-radius: 30px;
+        padding: 30px;
+        backdrop-filter: blur(5px);
+        
+    }
+
+    .container h1 {
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px;
+    }
+
+    .box input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        border-radius: 20px ;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: white;
+        cursor: pointer;
+    }
+
+    </style>
 </head>
 <body>
-    <h1>Já tem conta</h1>
+    <main class="container">
+        <form>
+            <h1>Login</h1>
+            
+            <div class="box">
+                <input placeholder="E-mail" type="email">
+            </div>
+            <div class="box">
+                <input placeholder="Senha" type="password">
+            </div>
+            <button type="submit">entrar</button>
+        </form>
+
+    </main>
+
+    <script>
+        
+
+
+    </script>
 </body>
 </html>

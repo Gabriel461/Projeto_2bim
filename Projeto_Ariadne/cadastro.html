@@ -65,20 +65,43 @@
 </head>
 <body>
     <main class="container">
-        <form >
+        <form id="cadastro">
             <h1>Cadastro</h1>
             <div class="box">
-                <input placeholder="Usuário" type="text">
+                <input id="name" placeholder="Usuário" type="text">
             </div>
             <div class="box">
-                <input placeholder="E-mail" type="email">
+                <input id="email" placeholder="E-mail" type="email">
             </div>
             <div class="box">
-                <input placeholder="Senha" type="password">
+                <input id="senha" placeholder="Senha" type="password">
             </div>
             <button type="submit">Cadastrar</button>
         </form>
 
     </main>
+
+    <script>
+        const form = document.getElementById("cadastro");
+
+        form.addEventListener("submit", function(salvar){
+            salvar.preventDefault();
+            const nome = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            const conta = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            localStorage.setItem("perfil", JSON.stringify(conta));
+
+            alert("Seu Cadastro foi realizado, confira o nosso site!");
+
+            window.location.href = "site.html";
+        });
+    </script>
 </body>
 </html>
