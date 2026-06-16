@@ -70,6 +70,7 @@
         border-radius: 20px ;
         font-size: 20px;
         color: white;
+        margin-left: -30px ;
 
     }
 
@@ -93,13 +94,13 @@
 </head>
 <body>
     <main class="container">
-        <form>
+        <form id="cadastro">
             <h1>Login</h1>
             <div class="box">
-                <input placeholder="E-mail" type="email" required>
+                <input id="email" placeholder="E-mail" type="email" required>
             </div>
             <div class="box">
-                <input placeholder="Senha" type="password" required>
+                <input id="senha" placeholder="Senha" type="password" required>
             </div>
             <button type="submit">entrar</button>
         </form>
@@ -107,8 +108,21 @@
     </main>
 
     <script> 
+        const form = document.getElementById("cadastro");
 
+        form.addEventListener("submit", function(salvar){
+            salvar.preventDefault();
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
 
+            const conta = {
+                email: email,
+                senha: senha
+            };
+
+            
+
+        });
     </script>
 </body>
 </html>
