@@ -4,97 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
-    <style>
-       * {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-       } 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: url(imagens/GOW.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: trocarFundo 24s infinite;
-    } 
-
-    @keyframes trocarFundo {
-    0%, 24% {
-        background-image: url("imagens/GOW.jpg");
-    }
-
-    25%, 49% {
-        background-image: url(imagens/cidade.jpg);
-    }
-
-    50%, 74% {
-        background-image: url(imagens/minecraft.jpg);
-    }
-
-    75%, 100% {
-        background-image: url(imagens/zelda.jpg);
-    }
-}
-
-    .container {
-        width: 420px;
-        background-color: transparent;
-        border: 3px solid  black;
-        border-radius: 30px;
-        padding: 30px;
-        backdrop-filter: blur(5px);
-    }
-
-    .container h1 {
-        font-size: 40px;
-        text-align: center;
-        color: black;
-        
-    }
-
-    .box {
-        position: relative;
-        width: 100%;
-        height: 50px;
-        margin: 30px;
-    }
-
-    .box input{
-        width: 100%;
-        height: 100%;
-        background-color: transparent;
-        border: none;
-        border-radius: 20px ;
-        font-size: 20px;
-        color: white;
-        margin-left: -30px ;
-
-    }
-
-    .box input::placeholder {
-        color: black;
-    }
-
-
-    button {
-        width: 100%;
-        height: 50px;
-        font-size: 20px;
-        border-radius: 20px;
-        border: black;
-        cursor: pointer;
-        color: white;
-        background-color: black;
-    }
-
-    </style>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <main class="container">
-        <form id="cadastro">
+        <form id="login">
             <h1>Login</h1>
             <div class="box">
                 <input id="email" placeholder="E-mail" type="email" required>
@@ -107,22 +21,6 @@
 
     </main>
 
-    <script> 
-        const form = document.getElementById("cadastro");
-
-        form.addEventListener("submit", function(salvar){
-            salvar.preventDefault();
-            const email = document.getElementById("email").value;
-            const senha = document.getElementById("senha").value;
-
-            const conta = {
-                email: email,
-                senha: senha
-            };
-
-            
-
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
