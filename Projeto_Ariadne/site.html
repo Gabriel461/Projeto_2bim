@@ -1,3 +1,4 @@
+HTML:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +9,23 @@
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <nav>
-         <h1>site</h1>
-    </nav>
+    <header>
+        <nav>
+            <button> ☰ </button>
+            <div>
+                <input type="text" id="jogos" placeholder ="Digite um jogo">
+                <button onclick id="buscar">Buscar</button>
+                <button>☀️</button>
+            </div>
+        </nav>
+    </header>
 
     <aside class="text-white bg-secondary">
         <h2>menu</h2>
     </aside>
    
     <main>
-        <div><p>imagens</p></div>
+        <div id="imagem"> <img src="imagens/The last of us.webp"></div>
     </main>
 
     <script src="site.js"></script>
