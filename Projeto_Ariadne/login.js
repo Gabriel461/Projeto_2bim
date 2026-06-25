@@ -11,7 +11,11 @@ form.addEventListener("submit", function(event) {
         alert(msg);
         window.location.href = "site.html";
     } else {
+<<<<<<< HEAD
         alert("Email ou senha incorretos! Entre com email ou senha corretos!")
+=======
+        alert("Email ou senha incorretos! Entre com email ou senha corretos.")
+>>>>>>> 0ca6dc178d0d122936398765705019579c13f5a8
     }
 
 });
