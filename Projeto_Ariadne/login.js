@@ -1,4 +1,6 @@
 const form = document.getElementById("login");
+const perfil = JSON.parse(LocalStorage.getItem("perfil"));
+
 
         form.addEventListener("submit", function(trazer){
             trazer.preventDefault();
