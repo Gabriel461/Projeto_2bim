@@ -5,9 +5,6 @@ body {
     transition: 3s;
 }
 
-
-
-
 nav {
         height: 100px;
         display: flex;
@@ -15,16 +12,23 @@ nav {
         justify-content: space-between;
     }
 
-aside {
-        width: 200px;
-        height: calc(100vh - 100px);
-        
-        position: fixed;
-    }
+aside{
+    position:fixed;
+    left:0;
+    top:0;
+    width:220px;
+    height:100vh;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
 
 main {
         margin-top: 0;
         margin-left: 200px;
+        display: grid;
+        grid-template-columns:repeat(12,1fr);
     }
 button{
         margin: 5px;
