@@ -16,19 +16,19 @@
 
     @keyframes trocarFundo {
     0%, 24% {
-        background-image: url("imagens/GOW.jpg");
+        background-image: url("../imagens/GOW.jpg");
     }
 
     25%, 49% {
-        background-image: url(imagens/cidade.jpg);
+        background-image: url("../imagens/cidade.jpg");
     }
 
     50%, 74% {
-        background-image: url(imagens/minecraft.jpg);
+        background-image: url("../imagens/minecraft.jpg");
     }
 
     75%, 100% {
-        background-image: url(imagens/zelda.jpg);
+        background-image: url("../imagens/zelda.jpg");
     }
 }
 

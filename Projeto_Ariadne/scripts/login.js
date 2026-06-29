@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event){
     if (emailConta === perfil.email && senhaConta === perfil.senha) {
         let msg = `Seja bem vindo de novo ${perfil.nome}`;
         alert(msg);
-        window.location.href = "site.html";
+        window.location.href="site.html";
     } else {
         window.alert("Email ou senha incorretos! Entre com email ou senha corretos.")
     }
