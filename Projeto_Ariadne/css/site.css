@@ -85,3 +85,8 @@ input{
 .claro aside{
     background:#ddd;
 }
+
+a {
+    color: orange;
+    text-decoration: none;
+}
