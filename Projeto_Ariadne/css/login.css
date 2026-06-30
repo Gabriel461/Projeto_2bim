@@ -82,3 +82,66 @@
         color: white;
         background-color: black;
     }
+    @media (max-width: 768px){
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 420px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .container h1{
+        font-size: 34px;
+    }
+
+    .box{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box input{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .container h1{
+        font-size: 28px;
+    }
+
+    .box{
+        height: 45px;
+        margin: 18px 0;
+    }
+
+    .box input{
+        font-size: 16px;
+    }
+
+    button{
+        height: 45px;
+        font-size: 18px;
+    }
+
+}

@@ -56,3 +56,56 @@
         border: white;
         cursor: pointer;
     }
+
+  @media (max-width: 768px){
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 420px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .box{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .box input{
+        margin-left: 0;
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .container{
+        padding: 20px;
+    }
+
+    .container h1{
+        font-size: 30px;
+    }
+
+    .box{
+        height: 45px;
+    }
+
+    .box input{
+        font-size: 16px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 18px;
+        height: 45px;
+    }
+
+}

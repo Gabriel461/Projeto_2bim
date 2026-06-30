@@ -15,7 +15,48 @@ aside{
     background:gray;
     padding:20px;
     transition:0.3s;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    box-sizing:border-box;
 }
+
+aside h2{
+    width:100%;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:35px;
+    font-size:34px;
+    letter-spacing:2px;
+    position:relative;
+    transition:0.3s;
+}
+
+aside h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:3px;
+    margin:12px auto;
+    border-radius:10px;
+    background:currentColor;
+}
+
+aside a{
+    width:100%;
+}
+
+aside .btn{
+    border-radius:15px;
+    height:55px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+aside .btn:hover{
+    transform:translateY(-2px);
+}
+
 
 
 body.menu-fechado aside{
@@ -89,4 +130,44 @@ input{
 a {
     color: orange;
     text-decoration: none;
+}
+
+.controle{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-family:'Orbitron', sans-serif;
+font-size:100px;
+animation:girar 6s infinite;
+}
+
+.controle p{
+font-size:32px;
+margin-top:20px;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+@keyframes girar{
+
+0%{
+transform:
+translateY(0)
+rotate(0deg);
+}
+
+50%{
+transform:
+translateY(-15px)
+rotate(8deg);
+}
+
+100%{
+transform:
+translateY(0)
+rotate(0deg);
+}
+
 }

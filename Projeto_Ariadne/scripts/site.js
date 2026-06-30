@@ -3,13 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const botao = document.getElementById("buscar");
     const resultado = document.getElementById("resultado");
     const input = document.getElementById("jogo");
-
     const menuBtn = document.getElementById("menu_btn");
     const tema = document.getElementById("tema");
 
-    // =====================
-    // API
-    // =====================
     botao.addEventListener("click", async () => {
 
         const jogo = input.value.toLowerCase().trim();
@@ -48,16 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // =====================
-    // MENU
-    // =====================
     menuBtn.addEventListener("click", () => {
         document.body.classList.toggle("menu-fechado");
     });
 
-    // =====================
-    // TEMA
-    // =====================
     tema.addEventListener("click", () => {
         document.body.classList.toggle("claro");
 
@@ -67,3 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+const catalogo = document.getElementById("catalogo");
+
+catalogo.addEventListener( "click",()=>{ 
+    document.getElementById("buscar").click();
+}
+
+);

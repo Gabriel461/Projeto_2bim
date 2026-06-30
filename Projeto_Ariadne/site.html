@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pàgina Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
     <link rel="shortcut icon" href="https://tse3.mm.bing.net/th/id/OIP.YUP3GSn1v70tVkKovlnJMAAAAA?pid=Api&P=0&h=180" type="image/x-icon">
@@ -11,67 +12,55 @@
 <body>
 <aside id="menu">
 
-<h2>Menu</h2>
-<a href="editar.html">
-    <button class="btn w-100 mb-2">
-        Editar Perfil
-    </button>
-</a>
+    <h2>Menu</h2>
+    <a href="editar.html">
+        <button class="btn w-100 mb-2">
+            Editar Perfil
+        </button>
+    </a>
 
-<a href="remover.html">
-    <button class="btn w-100">
-        Remover Perfil
-    </button>
-</a>
+    <a href="remover.html">
+        <button class="btn w-100">
+            Remover Perfil
+        </button>
+    </a>
 
 </aside>
 
 <header>
 
-<nav id="nav">
+    <nav id="nav">
 
-<div>
+        <div>
 
-<button
-id="menu_btn"
-class="btn btn-secondary"
->
-☰
-</button>
+            <button id="menu_btn" class="btn btn-secondary"> ☰ </button>
+            <input id="jogo" type="text" placeholder="Digite um jogo">
+            <button id="buscar"class="btn btn-warning">Buscar</button>
+            <button id="tema" class="btn btn-light">☀️</button>
+            <button id="catalogo" class="btn btn-warning"> Acesse o catálogo </button>
 
-<input
-id="jogo"
-type="text"
-placeholder="Digite um jogo"
->
+        </div>
 
-<button
-id="buscar"
-class="btn btn-warning"
->
-Buscar
-</button>
-
-<button
-id="tema"
-class="btn btn-light"
->
-☀️
-</button>
-
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
 <main id="conteudo">
+    <div id="resultado"></div>
+    <div class="controle">
 
-<div id="resultado"></div>
+        🎮
+
+        <p>
+        Escolha um jogo
+        </p>
+
+    </div>
 
 </main>
 
     <script src="scripts/tema.js"></script>
     <script src="scripts/site.js"></script>
+
 </body>
 </html>

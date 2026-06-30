@@ -39,3 +39,74 @@ body {
             height: 50px;
             margin-right: 10px;
         }
+
+        @media (max-width: 768px){
+
+    body{
+        font-size: 22px;
+        background-position: center;
+    }
+
+    nav{
+        height: auto;
+        padding: 15px;
+    }
+
+    nav h1{
+        font-size: 32px;
+    }
+
+    main{
+        margin-top: 250px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main h1{
+        font-size: 40px;
+    }
+
+    button{
+        width: 180px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    body{
+        font-size: 18px;
+    }
+
+    nav{
+        padding: 10px 15px;
+    }
+
+    nav h1{
+        font-size: 26px;
+    }
+
+    .entrar{
+        width: 90px;
+        height: 45px;
+    }
+
+    main{
+        margin-top: 180px;
+        padding: 15px;
+    }
+
+    main h1{
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    button{
+        width: 160px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+}
